@@ -1,0 +1,2983 @@
+{
+  "schema_version": 1,
+  "collection": "한국어 AI 스킬 컬렉션",
+  "maintainer_account": "hackingan-finger6",
+  "prepared_on": "2026-10-07",
+  "selection_note": "초기 125개 조사 후보를 활용 목적에 따라 재분류했다. 전체 독립 개발이나 실행 검증을 주장하지 않는다.",
+  "categories": [
+    {
+      "id": "travel",
+      "label": "이동·여행",
+      "count": 18
+    },
+    {
+      "id": "housing",
+      "label": "주거·부동산",
+      "count": 8
+    },
+    {
+      "id": "research",
+      "label": "리서치·공공정보",
+      "count": 13
+    },
+    {
+      "id": "business",
+      "label": "사업·창업·업무",
+      "count": 21
+    },
+    {
+      "id": "finance",
+      "label": "금융·투자·통계",
+      "count": 7
+    },
+    {
+      "id": "daily",
+      "label": "생활·쇼핑·건강",
+      "count": 28
+    },
+    {
+      "id": "culture",
+      "label": "교육·문화·스포츠",
+      "count": 15
+    },
+    {
+      "id": "writing",
+      "label": "글쓰기·콘텐츠",
+      "count": 5
+    },
+    {
+      "id": "environment",
+      "label": "날씨·환경",
+      "count": 4
+    },
+    {
+      "id": "development",
+      "label": "개발·문서·자동화",
+      "count": 4
+    },
+    {
+      "id": "interpretation",
+      "label": "운세·작명",
+      "count": 2
+    }
+  ],
+  "features": [
+    {
+      "id": "railway-timetable",
+      "title": "철도 통합 시간표 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "KTX 계열 열차의 공식 운행계획 시간표 조회",
+      "limits": "실시간 지연·잔여석·예매는 제공하지 않음",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/railway-timetable/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/railway-timetable/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/railway-timetable.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "railway-timetable"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "express-bus-booking",
+      "title": "고속버스 예매",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "고속버스 시간표·요금·잔여석 확인과 예매 단계 보조",
+      "limits": "결제는 공식 페이지에서 사용자 진행",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/express-bus-booking/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/express-bus-booking/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/express-bus-booking.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "express-bus-booking"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "intercity-bus-booking",
+      "title": "시외버스 예매",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "시외버스 시간표·요금·잔여석 확인과 예매 단계 보조",
+      "limits": "결제는 공식 페이지에서 사용자 진행",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/intercity-bus-booking/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/intercity-bus-booking/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/intercity-bus-booking.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "intercity-bus-booking"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "flight-ticket-search",
+      "title": "항공권 가격 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "항공권 후보와 날짜별 가격 비교",
+      "limits": "조회·예약 링크 제공; 예매·결제 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/flight-ticket-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/flight-ticket-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/flight-ticket-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "flight-ticket-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "myrealtrip-search",
+      "title": "마이리얼트립 MCP 검색",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "마이리얼트립 항공권·숙소·투어·티켓 검색",
+      "limits": "공식 MCP 조회; 예약·결제는 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/myrealtrip-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/myrealtrip-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/myrealtrip-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "myrealtrip-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "mofa-travel-safety",
+      "title": "외교부 해외안전·여행경보 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "나라별 공식 여행경보와 해외안전 정보 조회",
+      "limits": "외교부 데이터; 기본 프록시 경유",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mofa-travel-safety/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mofa-travel-safety/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/mofa-travel-safety.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "mofa-travel-safety"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "foresttrip-vacancy",
+      "title": "자연휴양림 빈 객실 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "자연휴양림 숙소·야영장 빈자리 검색",
+      "limits": "계정·브라우저 환경 필요; 실행 환경별 후속 예약 범위 차이",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/foresttrip-vacancy/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/foresttrip-vacancy/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/foresttrip-vacancy.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "foresttrip-vacancy"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "seoul-subway-arrival",
+      "title": "서울 지하철 도착정보 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "서울 지하철 도착 예정 열차 확인",
+      "limits": "역·방향 기준 조회",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-subway-arrival/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-subway-arrival/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/seoul-subway-arrival.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "seoul-subway-arrival"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "seoul-bike",
+      "title": "서울 따릉이 실시간 대여소 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "따릉이 대여소의 자전거·거치대 현황 확인",
+      "limits": "서울 지역; 빈 거치대는 제공 수치로 계산",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-bike/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-bike/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/seoul-bike.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "seoul-bike"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "seoul-density",
+      "title": "서울 실시간 혼잡도 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "서울 주요 장소의 혼잡도와 추정 인구 확인",
+      "limits": "제공되는 주요 장소만 조회; 추정 인구",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-density/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-density/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/seoul-density.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "seoul-density"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-transit-route",
+      "title": "한국 대중교통 길찾기",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "지하철·버스·도보 경로와 환승·요금 비교",
+      "limits": "ODsay API 키 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-transit-route/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-transit-route/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-transit-route.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-transit-route"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kakao-map",
+      "title": "카카오맵 장소·자동차 길찾기",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "장소 검색·주소 변환·자동차 길찾기",
+      "limits": "카카오 공식 API를 기본 프록시로 조회",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakao-map/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakao-map/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kakao-map.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kakao-map"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "highway-traffic-status",
+      "title": "고속도로 교통량·소통·CCTV 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "고속도로 속도·정체·교통량·CCTV 정보 조회",
+      "limits": "CCTV는 스트림 메타데이터; 키·접속 상태에 영향",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/highway-traffic-status/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/highway-traffic-status/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/highway-traffic-status.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "highway-traffic-status"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "komsa-ferry-info",
+      "title": "KOMSA 연안여객선 정보 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "연안여객선 운항 일정·선박·항로 확인",
+      "limits": "잔여석·예매·결제 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/komsa-ferry-info/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/komsa-ferry-info/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/komsa-ferry-info.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "komsa-ferry-info"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "cheap-gas-nearby",
+      "title": "근처 가장 싼 주유소 찾기",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "근처 주유소의 휘발유·경유 가격 비교",
+      "limits": "사용자가 제공한 위치 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/cheap-gas-nearby/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/cheap-gas-nearby/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/cheap-gas-nearby.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "cheap-gas-nearby"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "parking-lot-search",
+      "title": "근처 공영주차장 찾기",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "근처 공영주차장 위치·요금·운영시간 조회",
+      "limits": "실시간 빈자리·만차 여부 미제공",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/parking-lot-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/parking-lot-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/parking-lot-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "parking-lot-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "ev-charger-nearby",
+      "title": "전기차 충전소 위치·상태 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "전기차 충전소 위치·충전기 상태 확인",
+      "limits": "환경부 데이터 갱신시각 확인 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ev-charger-nearby/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ev-charger-nearby/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/ev-charger-nearby.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "ev-charger-nearby"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "subway-lost-property",
+      "title": "지하철 분실물 조회",
+      "category": "travel",
+      "category_label": "이동·여행",
+      "summary": "지하철 분실물 검색 조건과 유실물센터 안내",
+      "limits": "검색 흐름 안내·조건 구성 중심",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/subway-lost-property/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/subway-lost-property/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/subway-lost-property.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "subway-lost-property"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "real-estate-search",
+      "title": "한국 부동산 실거래가 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "아파트·오피스텔·주택 매매·전월세 실거래가 조회",
+      "limits": "신고된 거래 자료; 현재 호가와 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/real-estate-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/real-estate-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/real-estate-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "real-estate-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/tae0y/real-estate-mcp"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "housing-official-price",
+      "title": "한국 주택 공시가격 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "아파트·개별주택의 연도별 공시가격 조회",
+      "limits": "시세와 구분; 공개 웹 구조 변경에 영향",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/housing-official-price/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/housing-official-price/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/housing-official-price.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "housing-official-price"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "gongsijiga-search",
+      "title": "개별공시지가 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "필지별 개별공시지가와 연도별 변화 조회",
+      "limits": "토지의 정부 공시단가; 시장가격과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/gongsijiga-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/gongsijiga-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/gongsijiga-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "gongsijiga-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "building-register-search",
+      "title": "건축물대장 표제부 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "건물 용도·면적·층수·사용승인일 조회",
+      "limits": "건축물대장 표제부; 소유권·근저당은 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/building-register-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/building-register-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/building-register-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "building-register-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "lh-notice-search",
+      "title": "LH 청약 공고문 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "LH 임대·분양·주거지원 공고 검색",
+      "limits": "공고·마감·공급정보 조회; 청약 신청과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lh-notice-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lh-notice-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/lh-notice-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "lh-notice-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "sh-notice-search",
+      "title": "SH 청약·주택 공고문 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "SH 청약·임대·분양 공고와 첨부정보 검색",
+      "limits": "공개 공고 게시판 조회",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/sh-notice-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/sh-notice-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/sh-notice-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "sh-notice-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "court-auction-notice-search",
+      "title": "법원 경매 부동산 매각공고 조회",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "법원 경매 공고·사건·물건·최저매각가격 검색",
+      "limits": "조회 기능; 경매 참여·입찰은 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/court-auction-notice-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/court-auction-notice-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/court-auction-notice-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "court-auction-notice-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daangn-realty-search",
+      "title": "당근부동산 검색",
+      "category": "housing",
+      "category_label": "주거·부동산",
+      "summary": "당근의 지역별 부동산 매물 검색",
+      "limits": "문의·채팅·계약 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-realty-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-realty-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daangn-realty-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daangn-realty-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-law-search",
+      "title": "한국 법령 검색",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "한국 법령·조문·판례·유권해석·자치법규 검색",
+      "limits": "자료 검색·본문 확인 기능",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-law-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-law-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-law-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-law-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/chrisryugj/korean-law-mcp"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-patent-search",
+      "title": "한국 특허 정보 검색",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "한국 특허·실용신안과 출원번호 상세 검색",
+      "limits": "KIPRIS Plus 경로는 인증키 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-patent-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-patent-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-patent-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-patent-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-privacy-terms",
+      "title": "한국 개인정보처리방침·이용약관 자동 생성",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "웹서비스의 개인정보처리방침·이용약관·동의 화면 초안 생성",
+      "limits": "Next.js 프로젝트 대상; 업스트림 스킬 연결",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-privacy-terms/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-privacy-terms/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-privacy-terms.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-privacy-terms"
+      },
+      "related_projects_in_source": [
+        "https://github.com/kimlawtech/korean-privacy-terms",
+        "https://github.com/kimlawtech/korean-privacy-terms.git"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "iros-registry-automation",
+      "title": "등기부등본 자동화",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "법인·부동산 등기부 열람 준비와 발급 PDF 요약",
+      "limits": "결제·일부 열람·다운로드는 수동; 발급 비용 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/iros-registry-automation/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/iros-registry-automation/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/iros-registry-automation.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "iros-registry-automation"
+      },
+      "related_projects_in_source": [
+        "https://github.com/NomaDamas/marker-api-server",
+        "https://github.com/NomaDamas/marker-api-server",
+        "https://github.com/challengekim/iros-registry-automation",
+        "https://github.com/challengekim/iros-registry-automation",
+        "https://github.com/challengekim/iros-registry-automation.git"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "corporate-registration-consulting",
+      "title": "법인등기 신청 컨설팅",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "주식회사 설립 정관·등기 서류 HWP 작성 보조",
+      "limits": "발기설립 준비 초안; 최종 제출은 사용자 진행",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/corporate-registration-consulting/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/corporate-registration-consulting/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/corporate-registration-consulting.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "corporate-registration-consulting"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "court-payment-order-assistant",
+      "title": "지급명령 신청 보조",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "지급명령 신청서 초안·청구정보·증빙 목록 정리",
+      "limits": "로그인 이후 입력 준비; 최종 제출과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/court-payment-order-assistant/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/court-payment-order-assistant/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/court-payment-order-assistant.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "court-payment-order-assistant"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "assembly-bill-vote-search",
+      "title": "국회 의안·표결 조회",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "국회 법안·의안 상세·본회의 표결 조회",
+      "limits": "조회 전용",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/assembly-bill-vote-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/assembly-bill-vote-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/assembly-bill-vote-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "assembly-bill-vote-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "gov-overseas-trip-report",
+      "title": "공무국외출장 보고서 조회",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "공공기관 국외출장 보고서·첨부 원문 검색",
+      "limits": "기관별 공개 범위·수집 성공 여부를 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/gov-overseas-trip-report/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/gov-overseas-trip-report/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/gov-overseas-trip-report.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "gov-overseas-trip-report"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "sharenuri-facility-search",
+      "title": "공유누리 공공시설 검색",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "공공 회의실·체육시설·숙소·물품 검색",
+      "limits": "공식 예약 경로 안내; 예약 신청은 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/sharenuri-facility-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/sharenuri-facility-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/sharenuri-facility-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "sharenuri-facility-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "nts-business-registration",
+      "title": "사업자등록정보 확인",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "사업자등록번호의 휴폐업 상태·등록정보 진위 확인",
+      "limits": "번호와 확인용 입력값 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nts-business-registration/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nts-business-registration/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/nts-business-registration.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "nts-business-registration"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "biz-health-check",
+      "title": "사업자 실사 종합",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "사업자 상태·체납·제재·기업정보를 묶어 사실 확인",
+      "limits": "자료 교차조회; 위험 점수·등급 산정 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/biz-health-check/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/biz-health-check/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/biz-health-check.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "biz-health-check"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "national-pension-workplace",
+      "title": "국민연금 가입 사업장 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "사업장 국민연금 가입자 수와 월별 변화 확인",
+      "limits": "공개 가입자 정보; 전체 직원 수와 동일하지 않음",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/national-pension-workplace/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/national-pension-workplace/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/national-pension-workplace.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "national-pension-workplace"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "nts-tax-delinquency",
+      "title": "국세 체납 명단공개 검색",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "공개된 고액·상습체납자 명단에서 상호 검색",
+      "limits": "명단 미등재가 체납 없음의 증명은 아님",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nts-tax-delinquency/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nts-tax-delinquency/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/nts-tax-delinquency.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "nts-tax-delinquency"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "fsc-corporate-info",
+      "title": "금융위 기업기본정보 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "기업 대표자·설립일·업종 등 기본정보 조회",
+      "limits": "금융위 공개 기업정보",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/fsc-corporate-info/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/fsc-corporate-info/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/fsc-corporate-info.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "fsc-corporate-info"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "localdata-business-status",
+      "title": "인허가 영업상태 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "업종별 가게의 영업·휴업·폐업·인허가 상태 조회",
+      "limits": "인허가 데이터 대상 업종; 갱신시각 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/localdata-business-status/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/localdata-business-status/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/localdata-business-status.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "localdata-business-status"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "store-longevity-radar",
+      "title": "장수 점포 레이더",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "현재·과거 상권 자료를 비교해 오래 관측된 점포 찾기",
+      "limits": "과거 CSV 필요; 실제 개업일·생존율을 확정하지 않음",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/store-longevity-radar/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/store-longevity-radar/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/store-longevity-radar.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "store-longevity-radar"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-jangbu-for",
+      "title": "한국 사업자 장부 자동화",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "영수증·카드·은행 자료를 거래내역·장부·세무사 전달용 파일로 정리",
+      "limits": "업스트림 @kimlawtech/SpeciAI, Apache-2.0; macOS/Linux 문서 기준; 참고용 초안",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-jangbu-for/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-jangbu-for/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-jangbu-for.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-jangbu-for"
+      },
+      "related_projects_in_source": [
+        "https://github.com/kimlawtech/korean-jangbu-for"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "popbill",
+      "title": "팝빌 업무 API",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "세금계산서·현금영수증·홈택스 수집·메시지 등 업무 API 연결",
+      "limits": "개인 인증·권한·사용 요금 필요; 기능별 발행·전송 포함",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/popbill/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/popbill/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/popbill.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "popbill"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "naver-ad-performance",
+      "title": "네이버 검색광고 성과 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "네이버 검색광고 성과와 키워드 검색량 조회",
+      "limits": "광고 계정 API 키·시크릿·고객 ID 필요; 읽기 전용",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-ad-performance/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-ad-performance/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/naver-ad-performance.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "naver-ad-performance"
+      },
+      "related_projects_in_source": [
+        "https://github.com/NariP/naver-searchad"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kstartup-search",
+      "title": "창업진흥원 K-Startup 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "K-Startup 창업지원 공고·콘텐츠·통계 검색",
+      "limits": "기본 프록시 경유 조회",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kstartup-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kstartup-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kstartup-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kstartup-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "government-support-survey",
+      "title": "정부지원 전수조사",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "여러 기관의 정부지원 공고를 모아 프로젝트 적합성 검토",
+      "limits": "모든 공고 수집을 보장하지 않음; 소스별 누락 표시",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/government-support-survey/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/government-support-survey/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/government-support-survey.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "government-support-survey"
+      },
+      "related_projects_in_source": [
+        "https://github.com/djfksjd/ir-search"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "g2b-order-plan-search",
+      "title": "나라장터 발주계획 검색",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "나라장터 발주계획·기관·금액·사업명 검색",
+      "limits": "발주계획 자료; 전체 입찰공고와 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/g2b-order-plan-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/g2b-order-plan-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/g2b-order-plan-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "g2b-order-plan-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "g2b-sanctioned-supplier",
+      "title": "부정당제재업체 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "업체의 현재 유효한 나라장터 부정당제재 조회",
+      "limits": "사업자번호 기준; 만료·해제 이력 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/g2b-sanctioned-supplier/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/g2b-sanctioned-supplier/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/g2b-sanctioned-supplier.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "g2b-sanctioned-supplier"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "d2b-notice-search",
+      "title": "국방전자조달 공고 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "국방전자조달 입찰공고 검색",
+      "limits": "공개 브라우저 화면 조회 중심",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/d2b-notice-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/d2b-notice-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/d2b-notice-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "d2b-notice-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "s2b-notice-search",
+      "title": "S2B 학교장터 공고 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "학교장터 공고·견적요청 검색",
+      "limits": "공개 화면·HTML 파싱 중심",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/s2b-notice-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/s2b-notice-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/s2b-notice-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "s2b-notice-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "ev-subsidy-status",
+      "title": "전기차 보조금 현황 조회",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "지자체별 전기차 보조금 잔여 대수·모델별 금액 조회",
+      "limits": "현황 조회; 신청·지급 확정과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ev-subsidy-status/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ev-subsidy-status/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/ev-subsidy-status.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "ev-subsidy-status"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "jobkorea-talent-search",
+      "title": "잡코리아 인재검색",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "잡코리아 기업회원 화면에서 채용 후보 비교",
+      "limits": "기업회원 로그인 필요; 마스킹 후보만; 유료 열람·연락 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/jobkorea-talent-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/jobkorea-talent-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/jobkorea-talent-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "jobkorea-talent-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "saramin-talent-search",
+      "title": "사람인 인재풀 검색",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "사람인 기업회원 인재풀에서 채용 후보 비교",
+      "limits": "기업회원 로그인 필요; 마스킹 후보만; 유료 열람·연락 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/saramin-talent-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/saramin-talent-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/saramin-talent-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "saramin-talent-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "job-posting-match",
+      "title": "이력서 기반 채용공고 매칭",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "이력서·희망조건에 맞는 채용공고와 지원 전략 정리",
+      "limits": "잡코리아·사람인 공개 채용공고 기반",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/job-posting-match/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/job-posting-match/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/job-posting-match.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "job-posting-match"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daangn-jobs-search",
+      "title": "당근알바 검색",
+      "category": "business",
+      "category_label": "사업·창업·업무",
+      "summary": "당근의 지역·키워드별 알바 공고 검색",
+      "limits": "지원·채팅 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-jobs-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-jobs-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daangn-jobs-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daangn-jobs-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-stock-search",
+      "title": "한국 주식 정보 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "한국 상장종목 기본정보·일별 시세 조회",
+      "limits": "일별 공개 시세; 실시간 거래 기능과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-stock-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-stock-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-stock-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-stock-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/jjlabsio/korea-stock-mcp"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "k-dart",
+      "title": "금감원 DART 전자공시 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "DART 공시·재무제표·배당·감사의견 조회",
+      "limits": "DART 인증키 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/k-dart/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/k-dart/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/k-dart.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "k-dart"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "toss-investment",
+      "title": "토스증권 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "토스증권 계좌·보유주식·시세·주문 상태 조회",
+      "limits": "공식 API 인증 필요; 주문 생성·정정·취소 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/toss-investment/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/toss-investment/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/toss-investment.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "toss-investment"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daishin-report-search",
+      "title": "대신증권 리포트 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "공개 미러에 있는 대신증권 리포트·목표주가 자료 검색",
+      "limits": "제3자 GitHub 미러 기준; 증권사 공식 서버 직접 조회와 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daishin-report-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daishin-report-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daishin-report-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daishin-report-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kosis-stats",
+      "title": "국가데이터처 KOSIS 통계 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "KOSIS 통계표 검색·항목·단위·수치 조회",
+      "limits": "기본 프록시; 대용량·직접 조회는 개인 인증키 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kosis-stats/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kosis-stats/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kosis-stats.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kosis-stats"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "bok-ecos-stats",
+      "title": "한국은행 ECOS 경제통계 조회",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "한국은행 금리·환율·물가 등 경제 시계열 조회",
+      "limits": "데모 키 소량 조회; 더 많은 행은 개인 API 키 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bok-ecos-stats/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bok-ecos-stats/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/bok-ecos-stats.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "bok-ecos-stats"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "multi-asset-morning-briefing",
+      "title": "멀티에셋 모닝 브리핑",
+      "category": "finance",
+      "category_label": "금융·투자·통계",
+      "summary": "주식·금리·환율·원자재와 향후 일정을 아침 브리핑으로 정리",
+      "limits": "완료된 시장 세션·자료시각·근거 링크 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/multi-asset-morning-briefing/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/multi-asset-morning-briefing/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/multi-asset-morning-briefing.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "multi-asset-morning-briefing"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "emergency-room-beds",
+      "title": "근처 응급실 병상 상태 확인",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "근처 응급실 운영·병상 운영 표시와 갱신시각 확인",
+      "limits": "정확한 실시간 잔여 병상 수·가동률 미제공",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/emergency-room-beds/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/emergency-room-beds/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/emergency-room-beds.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "emergency-room-beds"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "nhis-care-checkup-search",
+      "title": "장기요양·건강검진기관 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "장기요양기관·건강검진기관 검색",
+      "limits": "공개 기관 후보 조회",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nhis-care-checkup-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/nhis-care-checkup-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/nhis-care-checkup-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "nhis-care-checkup-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "mfds-drug-safety",
+      "title": "의약품 안전 체크",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "의약품 효능·사용법·주의사항·상호작용 정보 검색",
+      "limits": "식약처 공개 제품 설명 기반",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mfds-drug-safety/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mfds-drug-safety/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/mfds-drug-safety.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "mfds-drug-safety"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "mfds-food-safety",
+      "title": "식품 안전 체크",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "부적합 식품·회수·판매중지 정보 확인",
+      "limits": "식약처·식품안전나라 공개 자료",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mfds-food-safety/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/mfds-food-safety/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/mfds-food-safety.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "mfds-food-safety"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "animal-pharmacy-search",
+      "title": "동물약국·동물용의약품 취급 약국 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "동물약국·동물용의약품·취급 약국 검색",
+      "limits": "취급 여부는 최근 구매 이력 기반; 현재 재고와 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/animal-pharmacy-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/animal-pharmacy-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/animal-pharmacy-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "animal-pharmacy-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "coupang-product-search",
+      "title": "쿠팡 상품 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "쿠팡 상품·가격대·로켓배송·특가 검색",
+      "limits": "파트너스 제휴 링크 고지 있음; 최종 결제금액은 별도 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/coupang-product-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/coupang-product-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/coupang-product-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "coupang-product-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "naver-shopping-search",
+      "title": "네이버 쇼핑 가격비교",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "네이버 쇼핑 상품의 표시가격·판매처 비교",
+      "limits": "조회한 후보 범위의 가격 비교; 전 상품 최저가 보장 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-shopping-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-shopping-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/naver-shopping-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "naver-shopping-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "danawa-price-search",
+      "title": "다나와 최저가 비교",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "다나와 쇼핑몰별 가격·배송비·카드할인 비교",
+      "limits": "상품·조건별 실구매가 후보 비교",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/danawa-price-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/danawa-price-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/danawa-price-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "danawa-price-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "market-kurly-search",
+      "title": "마켓컬리 상품 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "마켓컬리 상품·가격·할인·품절 여부 검색",
+      "limits": "조회 결과 시점 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/market-kurly-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/market-kurly-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/market-kurly-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "market-kurly-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daiso-product-search",
+      "title": "다이소 상품 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "다이소 매장·상품·픽업 가능 여부와 재고 정보 조회",
+      "limits": "README와 개별 문서의 재고 범위 설명 불일치; 현재 수량 조회 가능성 미검증",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daiso-product-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daiso-product-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daiso-product-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daiso-product-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "olive-young-search",
+      "title": "올리브영 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "올리브영 매장·상품·재고 검색",
+      "limits": "조회 결과 시점 기준; 실제 재고 미검증",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/olive-young-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/olive-young-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/olive-young-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "olive-young-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/hmmhmmhm/daiso-mcp",
+        "https://github.com/hmmhmmhm/daiso-mcp.git"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "ohou-today-deal",
+      "title": "오늘의집 오늘의딜 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "오늘의집 특가를 가격·할인율·리뷰로 검색",
+      "limits": "오늘의딜·스페셜딜 공개 목록 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ohou-today-deal/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ohou-today-deal/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/ohou-today-deal.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "ohou-today-deal"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "bunjang-search",
+      "title": "번개장터 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "번개장터 상품 검색·상세 조회와 선택적 찜·채팅 기능",
+      "limits": "찜·채팅은 별도 사용자 요청·권한 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bunjang-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bunjang-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/bunjang-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "bunjang-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/pinion05/bunjangcli"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daangn-used-goods-search",
+      "title": "당근 중고거래 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "당근 지역별 중고 매물 검색",
+      "limits": "구매·채팅 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-used-goods-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-used-goods-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daangn-used-goods-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daangn-used-goods-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "daangn-cars-search",
+      "title": "당근중고차 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "당근의 가격·지역별 중고차 매물 검색",
+      "limits": "문의·시승 예약·구매 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-cars-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/daangn-cars-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/daangn-cars-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "daangn-cars-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "consumer-price-safety-search",
+      "title": "소비자 가격·리콜정보 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "참가격·소비자24 가격·리콜정보 연동을 준비하는 기능",
+      "limits": "초안 단계: 인증키·메뉴 매핑·실제 통합조회 검증 예정",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/consumer-price-safety-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/consumer-price-safety-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/consumer-price-safety-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "consumer-price-safety-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "delivery-tracking",
+      "title": "택배 배송조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "CJ대한통운·우체국 송장의 배송 상태 확인",
+      "limits": "두 택배사 지원 문서 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/delivery-tracking/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/delivery-tracking/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/delivery-tracking.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "delivery-tracking"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kamis-food-price",
+      "title": "KAMIS 농수축산물 가격 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "농수축산물 도매·소매 가격과 기간별 변화 비교",
+      "limits": "KAMIS 공식 조사 가격",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kamis-food-price/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kamis-food-price/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kamis-food-price.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kamis-food-price"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kakao-bar-nearby",
+      "title": "근처 술집 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "근처 술집 위치·거리·전화·지도 링크 검색",
+      "limits": "현재 영업·메뉴·좌석은 공식 API 미제공; 후속 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakao-bar-nearby/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakao-bar-nearby/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kakao-bar-nearby.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kakao-bar-nearby"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "hola-poke-yeoksam",
+      "title": "올라포케 역삼 포케",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "올라포케 역삼점 메뉴·매장·단체주문·이벤트 안내",
+      "limits": "특정 한 매장 전용; 이벤트 참여 기능은 별도 요청 대상",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hola-poke-yeoksam/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hola-poke-yeoksam/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/hola-poke-yeoksam.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "hola-poke-yeoksam"
+      },
+      "related_projects_in_source": [
+        "https://github.com/mnspkm/hola-poke-yeoksam-skill"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "bccard-eatpl-search",
+      "title": "BC카드 eat.pl 맛집 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "카드 결제 자료 기반 동네 맛집·음식점·카페 검색",
+      "limits": "eat.pl이 반환하는 매출 상위 후보와 상세 링크 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bccard-eatpl-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/bccard-eatpl-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/bccard-eatpl-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "bccard-eatpl-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-marathon-schedule",
+      "title": "한국 마라톤 일정 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "마라톤·철인3종 대회 일정·장소·접수기간 검색",
+      "limits": "고러닝·대한철인3종협회 공개 일정",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-marathon-schedule/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-marathon-schedule/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-marathon-schedule.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-marathon-schedule"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kbo-results",
+      "title": "KBO 경기 결과 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "KBO 경기 일정·결과·팀별 경기 조회",
+      "limits": "공개 경기 데이터",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kbo-results/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kbo-results/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kbo-results.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kbo-results"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kbl-results",
+      "title": "KBL 경기 결과 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "KBL 경기 일정·결과·팀 순위 조회",
+      "limits": "공개 경기 데이터",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kbl-results/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kbl-results/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kbl-results.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kbl-results"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kleague-results",
+      "title": "K리그 경기 결과 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "K리그1·2 일정·결과·팀 순위 조회",
+      "limits": "공개 경기 데이터",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kleague-results/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kleague-results/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kleague-results.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kleague-results"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "lck-analytics",
+      "title": "LCK 경기 분석",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "LCK 결과·순위·밴픽·메타·전환점 분석",
+      "limits": "분석·파워 레이팅은 제공 데이터에 따른 해석",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lck-analytics/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lck-analytics/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/lck-analytics.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "lck-analytics"
+      },
+      "related_projects_in_source": [
+        "https://github.com/jerjangmin/share"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-cinema-search",
+      "title": "영화관 검색",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "CGV·메가박스·롯데시네마 상영시간·잔여석 검색",
+      "limits": "조회 결과 시점 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-cinema-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-cinema-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-cinema-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-cinema-search"
+      },
+      "related_projects_in_source": [
+        "https://github.com/hmmhmmhm/daiso-mcp",
+        "https://github.com/hmmhmmhm/daiso-mcp.git"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "ticket-availability",
+      "title": "공연 일정·잔여석 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "YES24·인터파크 공연 회차·등급별 잔여석 확인",
+      "limits": "예매·결제 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ticket-availability/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/ticket-availability/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/ticket-availability.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "ticket-availability"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kopis-performance-search",
+      "title": "KOPIS 공연 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "공연예술통합전산망 공연·공연장 검색",
+      "limits": "예매는 공식 예매처에서 별도 진행",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kopis-performance-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kopis-performance-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kopis-performance-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kopis-performance-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "lotto-results",
+      "title": "로또 당첨 확인",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "로또 회차별 당첨번호·당첨금·내 번호 대조",
+      "limits": "결과 조회; 당첨 예측 기능과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lotto-results/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/lotto-results/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/lotto-results.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "lotto-results"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "joseon-sillok-search",
+      "title": "조선왕조실록 검색",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "조선왕조실록 키워드·왕·연도별 기사 검색",
+      "limits": "국역·원문 발췌 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/joseon-sillok-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/joseon-sillok-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/joseon-sillok-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "joseon-sillok-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-heritage-search",
+      "title": "국가유산 검색·행사 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "국가유산 정보·위치·월별 활용 행사 검색",
+      "limits": "국가유산청 공개 API",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-heritage-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-heritage-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-heritage-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-heritage-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "religious-facility-search",
+      "title": "종교시설 찾기",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "근처 교회·성당·사찰 위치·거리·전화 검색",
+      "limits": "장소 정보; 실제 예배·운영시간은 별도 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/religious-facility-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/religious-facility-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/religious-facility-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "religious-facility-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-scholarship-search",
+      "title": "장학금 검색 및 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "장학금 금액·자격·신청기간·지원 가능 공고 검색",
+      "limits": "공식 공고 확인; 신청·수혜 확정과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-scholarship-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-scholarship-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-scholarship-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-scholarship-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "k-schoollunch-menu",
+      "title": "학교 급식 식단 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "학교·날짜별 급식 식단 조회",
+      "limits": "NEIS 교육청·학교 데이터",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/k-schoollunch-menu/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/k-schoollunch-menu/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/k-schoollunch-menu.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "k-schoollunch-menu"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "library-book-search",
+      "title": "도서관 도서 조회",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "도서 검색·소장 도서관·대출 가능 정보 조회",
+      "limits": "도서관 정보나루 제공 데이터 범위",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/library-book-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/library-book-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/library-book-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "library-book-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "keris-academic-search",
+      "title": "KERIS/RISS 학술자료 검색",
+      "category": "culture",
+      "category_label": "교육·문화·스포츠",
+      "summary": "RISS 논문·학위논문·도서 메타데이터 검색",
+      "limits": "기관·대학용 검색 API 키 필요; 원문 접근권한 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/keris-academic-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/keris-academic-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/keris-academic-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "keris-academic-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "naver-news-search",
+      "title": "네이버 뉴스 검색",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "네이버 뉴스 제목·요약·발행시각·원문 링크 검색",
+      "limits": "기사 메타데이터; 본문 전체·유료 기사 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-news-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-news-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/naver-news-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "naver-news-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "hankookilbo-news",
+      "title": "한국일보 뉴스 조회",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "한국일보 헤드라인·최신·주제별 기사 검색",
+      "limits": "공식 MCP의 기사 메타데이터·링크",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hankookilbo-news/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hankookilbo-news/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/hankookilbo-news.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "hankookilbo-news"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "naver-blog-research",
+      "title": "네이버 블로그 리서치",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "네이버 블로그 검색·원문·이미지와 교차 검증 리서치",
+      "limits": "공개 원문 중심",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-blog-research/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naver-blog-research/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/naver-blog-research.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "naver-blog-research"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "geeknews-search",
+      "title": "긱뉴스 조회",
+      "category": "research",
+      "category_label": "리서치·공공정보",
+      "summary": "긱뉴스 최신 기술 글·키워드·요약·링크 조회",
+      "limits": "RSS/Atom 기반; 피드 수록 범위 검색",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/geeknews-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/geeknews-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/geeknews-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "geeknews-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-spell-check",
+      "title": "한국어 맞춤법 검사",
+      "category": "writing",
+      "category_label": "글쓰기·콘텐츠",
+      "summary": "한국어 맞춤법·문법 오류와 교정 이유 정리",
+      "limits": "외부 검사기 결과 기반",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-spell-check/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-spell-check/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-spell-check.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-spell-check"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-humanizer",
+      "title": "한국어 AI 윤문",
+      "category": "writing",
+      "category_label": "글쓰기·콘텐츠",
+      "summary": "번역체·상투어를 다듬고 말투·분량을 맞추는 한국어 윤문",
+      "limits": "프롬프트·지식 기반; AI 작성 여부를 증명하는 탐지기는 아님",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-humanizer/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-humanizer/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-humanizer.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-humanizer"
+      },
+      "related_projects_in_source": [
+        "https://github.com/blader/humanizer",
+        "https://github.com/epoko77-ai/im-not-ai"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-slang-writing",
+      "title": "한국어 유행어 글쓰기",
+      "category": "writing",
+      "category_label": "글쓰기·콘텐츠",
+      "summary": "문맥·분위기에 맞는 유행어를 골라 글에 적용",
+      "limits": "큐레이션 후보·나무위키 참고; 최신 유행 전수 보장 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-slang-writing/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-slang-writing/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-slang-writing.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-slang-writing"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-middle-korean",
+      "title": "한국 중세 국어풍 변환",
+      "category": "writing",
+      "category_label": "글쓰기·콘텐츠",
+      "summary": "한국어 문장을 중세국어풍 창작 문체로 변환",
+      "limits": "역사언어학적으로 정확한 번역과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-middle-korean/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-middle-korean/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-middle-korean.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-middle-korean"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-character-count",
+      "title": "한국어 글자 수 세기",
+      "category": "writing",
+      "category_label": "글쓰기·콘텐츠",
+      "summary": "글자·줄·UTF-8·NEIS 바이트 수 계산",
+      "limits": "규칙에 따른 계산 도구",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-character-count/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-character-count/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-character-count.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-character-count"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korea-weather",
+      "title": "한국 날씨 조회",
+      "category": "environment",
+      "category_label": "날씨·환경",
+      "summary": "기상청 단기예보로 지역 날씨 조회",
+      "limits": "예보 기준시각 확인",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korea-weather/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korea-weather/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korea-weather.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korea-weather"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "seoul-weather-risk",
+      "title": "서울 기상 위험 시간대 조회",
+      "category": "environment",
+      "category_label": "날씨·환경",
+      "summary": "서울 행정동별 폭염·한파·호우 등 위험 예상 시간 조회",
+      "limits": "ASK 서울 예보 기반 참고값; 기상청 공식 특보 아님",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-weather-risk/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/seoul-weather-risk/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/seoul-weather-risk.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "seoul-weather-risk"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "fine-dust-location",
+      "title": "사용자 위치 미세먼지 조회",
+      "category": "environment",
+      "category_label": "날씨·환경",
+      "summary": "지역·측정소별 미세먼지·초미세먼지 확인",
+      "limits": "측정소·측정시각 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/fine-dust-location/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/fine-dust-location/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/fine-dust-location.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "fine-dust-location"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "han-river-water-level",
+      "title": "한강 수위 정보 조회",
+      "category": "environment",
+      "category_label": "날씨·환경",
+      "summary": "한강 관측소별 수위·유량·기준수위 확인",
+      "limits": "관측소·관측시각 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/han-river-water-level/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/han-river-water-level/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/han-river-water-level.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "han-river-water-level"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "korean-holiday-calendar",
+      "title": "한국 공휴일·특일 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "공휴일·국경일·기념일·절기 조회",
+      "limits": "한국천문연구원 특일 데이터",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-holiday-calendar/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/korean-holiday-calendar/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/korean-holiday-calendar.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "korean-holiday-calendar"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "zipcode-search",
+      "title": "우편번호 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "주소로 우편번호·공식 영문주소 조회",
+      "limits": "우체국 공개 검색",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/zipcode-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/zipcode-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/zipcode-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "zipcode-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "household-waste-info",
+      "title": "생활쓰레기 배출정보 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "지역별 쓰레기·음식물·재활용 배출요일·시간 확인",
+      "limits": "시군구 공개 자료; 세부 단지 규칙은 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/household-waste-info/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/household-waste-info/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/household-waste-info.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "household-waste-info"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "public-restroom-nearby",
+      "title": "근처 공중화장실 찾기",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "근처 공중·개방화장실 위치·개방시간 검색",
+      "limits": "사용자가 제공한 위치 기준",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/public-restroom-nearby/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/public-restroom-nearby/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/public-restroom-nearby.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "public-restroom-nearby"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "donation-place-search",
+      "title": "기부처 조회",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "지역·관심 분야별 기부처 후보·공식 신청 경로 안내",
+      "limits": "자동 후원·결제 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/donation-place-search/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/donation-place-search/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/donation-place-search.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "donation-place-search"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kakaotalk-mac",
+      "title": "카카오톡 Mac 아카이브 검색",
+      "category": "daily",
+      "category_label": "생활·쇼핑·건강",
+      "summary": "Mac의 로컬 카카오톡 대화 아카이브 검색",
+      "limits": "Apple Silicon macOS 전용; 메시지 전송 제외",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakaotalk-mac/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kakaotalk-mac/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kakaotalk-mac.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kakaotalk-mac"
+      },
+      "related_projects_in_source": [
+        "https://github.com/NomaDamas/katok.git"
+      ],
+      "platform_note": "Apple Silicon macOS 전용; 현재 Windows에서 실시간 카카오톡 수집 불가",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "hwp",
+      "title": "HWP 문서 조회/변환",
+      "category": "development",
+      "category_label": "개발·문서·자동화",
+      "summary": "HWP·HWPX 내용 추출·변환·문서 비교·양식 필드 확인",
+      "limits": "문서 파싱·변환 기능",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hwp/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/hwp/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/hwp.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "hwp"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "rhwp-edit",
+      "title": "HWP 문서 편집",
+      "category": "development",
+      "category_label": "개발·문서·자동화",
+      "summary": "HWP 본문·표·셀을 삽입·수정·치환",
+      "limits": "HWP 5.x 편집; 문서별 결과 확인 필요",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/rhwp-edit/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/rhwp-edit/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/rhwp-edit.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "rhwp-edit"
+      },
+      "related_projects_in_source": [
+        "https://github.com/edwardkim/rhwp"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "rhwp-advanced",
+      "title": "HWP 레이아웃·IR 디버깅",
+      "category": "development",
+      "category_label": "개발·문서·자동화",
+      "summary": "HWP 레이아웃·내부 구조·버전 차이·썸네일 검사",
+      "limits": "고급 문서 진단 도구",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/rhwp-advanced/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/rhwp-advanced/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/rhwp-advanced.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "rhwp-advanced"
+      },
+      "related_projects_in_source": [
+        "https://github.com/edwardkim/rhwp"
+      ],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "kr-whois-lookup",
+      "title": "KR WHOIS 조회",
+      "category": "development",
+      "category_label": "개발·문서·자동화",
+      "summary": "한국 도메인·IP·AS의 공개 등록정보 조회",
+      "limits": "공개 WHOIS 정보",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kr-whois-lookup/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/kr-whois-lookup/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/kr-whois-lookup.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "kr-whois-lookup"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "saju-fortune",
+      "title": "사주 운세 풀이",
+      "category": "interpretation",
+      "category_label": "운세·작명",
+      "summary": "생년월일시로 사주·오행·주제별 운세·궁합 풀이",
+      "limits": "사주 해석 도구; 과학적 예측 검증과 구분",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/saju-fortune/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/saju-fortune/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/saju-fortune.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "saju-fortune"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    },
+    {
+      "id": "naming-house",
+      "title": "작명소",
+      "category": "interpretation",
+      "category_label": "운세·작명",
+      "summary": "사주·성명학·한자 획수·발음 기준 이름 추천",
+      "limits": "성명학 참고 점수; 인명용 한자·개명 검증 별도",
+      "review_status": "documents_reviewed_execution_unverified",
+      "codex_install_status": "not_installed_in_this_project",
+      "source": {
+        "skill": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naming-house/SKILL.md",
+        "instructions": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/naming-house/instruction.md",
+        "guide": "https://github.com/NomaDamas/k-skill/blob/9fade13b1066bc58fd820fe659145a9a21974138/docs/features/naming-house.md"
+      },
+      "install": {
+        "repository": "NomaDamas/k-skill",
+        "ref": "9fade13b1066bc58fd820fe659145a9a21974138",
+        "path": "naming-house"
+      },
+      "related_projects_in_source": [],
+      "platform_note": "기능별 문서 확인 필요",
+      "authentication_note": "기능별 문서에서 사용자 키·로그인·공개 조회를 확인; 인증 성공 미검증"
+    }
+  ]
+}

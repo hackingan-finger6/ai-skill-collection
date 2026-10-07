@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "korean-ai-skill-collection",
+  "version": "0.1.0",
+  "description": "한국어 AI 기능 125개의 안내 목록과 선택 설치·보관·복원 도우미 2개.",
+  "author": {
+    "name": "hackingan-finger6",
+    "url": "https://github.com/hackingan-finger6"
+  },
+  "homepage": "https://github.com/hackingan-finger6/ai-skill-collection",
+  "repository": "https://github.com/hackingan-finger6/ai-skill-collection",
+  "license": "MIT",
+  "keywords": ["korean", "agent-skills", "codex", "skill-management"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "한국어 AI 스킬 컬렉션",
+        "shortDescription": "기능 안내 125개와 선택 설치·보관·복원 도우미 2개",
+        "developerName": "hackingan-finger6",
+        "category": "Productivity"
+      }
+    }
+  }
+}

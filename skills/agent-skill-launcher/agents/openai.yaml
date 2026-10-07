@@ -1,0 +1,3 @@
+interface:
+  display_name: "스킬 시작 도우미"
+  short_description: "필요한 에이전트 스킬을 선택하고 설치와 실행 준비 상태를 확인합니다"
